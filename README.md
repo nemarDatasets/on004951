@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004951-blue)](https://doi.org/10.82901/nemar.on004951)
+
 This dataset contains the raw EEG data accompanying the paper "The transformation of sensory to perceptual braille letter representations in the visually deprived brain". Please cite the above paper if you use this data.
 
 The dataset includes:
