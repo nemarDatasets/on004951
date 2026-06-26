@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Braille letters - EEG",
+  "description": "This dataset contains raw EEG recordings from participants performing a tactile discrimination task involving Braille letter stimulation. Participants received Braille letters (B, C, D, L, M, N, V, Z) presented on Braille cells under their left and right index fingers while EEG was recorded. The dataset accompanies research investigating the neural transformation of sensory tactile input to perceptual representations of Braille letters in the visually deprived brain.",
+  "methods_description": "EEG data were recorded using BrainVision equipment and stored in BrainVision format (.eeg, .vhdr, .vmrk files). Stimuli consisted of Braille letters presented tactilely to the left and right index fingers. Experimental triggers marked letter presentations (S1-8 for left hand, S9-16 for right hand), trial onsets, stimulus onsets, catch trials, and behavioral responses. Some participants completed multiple sessions, and recording was restarted within sessions for some participants, resulting in multiple runs.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,27 @@
     "Carina Kaltenbach": {},
     "Radoslaw M. Cichy": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004951.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Braille"
+    },
+    {
+      "term": "tactile perception"
+    },
+    {
+      "term": "sensory processing"
+    },
+    {
+      "term": "visual deprivation"
+    },
+    {
+      "term": "electroencephalography"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004951",
       "identifier_type": "URL",
@@ -36,6 +53,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004951.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -57,12 +79,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "23.6 GB (70 files)"
   ],
   "formats": [
     ".eeg",
@@ -70,29 +92,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset contains raw EEG recordings from participants performing a tactile discrimination task involving Braille letter stimuli presented to the fingertips. The study investigates the neural mechanisms underlying sensory-to-perceptual transformations of Braille letters in the visually deprived brain, with stimuli consisting of eight Braille letters (B, C, D, L, M, N, V, Z) presented bilaterally under the index fingers. The dataset includes complete BrainVision files with detailed event markers for stimulus onsets, trial types, and behavioral responses.",
-  "methods_description": "EEG data were recorded during a tactile Braille letter discrimination task. Stimuli consisted of eight Braille letters presented on Braille cells under the left and right index fingers. Triggers S1-8 indicate letters presented to the left hand, while S9-16 indicate letters presented to the right hand. Additional event markers include trial onsets (S101), stimulus onsets (S222), catch trials (S200), and pedal press responses (S253/S254). Some participants completed multiple sessions, and EEG recording was restarted within sessions for some participants, resulting in separate runs.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Braille"
-    },
-    {
-      "term": "tactile perception"
-    },
-    {
-      "term": "visual deprivation"
-    },
-    {
-      "term": "sensory processing"
-    },
-    {
-      "term": "letter discrimination"
-    }
-  ],
-  "source_hash": "42e4e81f74e13f25684063ddcac7270403831538382d7096cc8904fe5cad1951"
+  "source_hash": "09ba2e586a3a6b781fe6c1323f423e468ebf88bf1906b1332ebaa451213bf118"
 }
