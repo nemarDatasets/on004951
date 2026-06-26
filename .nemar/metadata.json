@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004951",
-  "source": "openneuro",
-  "source_id": "ds004951",
+  "pipeline_stage": "validated",
   "title": "Braille letters - EEG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Marleen Haupt": {},
     "Monika Graumann": {},
@@ -11,35 +11,88 @@
     "Carina Kaltenbach": {},
     "Radoslaw M. Cichy": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004951.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004951",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004951",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "CI241/1-1"
+      "funder_name": "DFG",
+      "award_number": "CI241/1-1"
     },
     {
-      "funder_name": "CI241/3-1"
+      "funder_name": "DFG",
+      "award_number": "CI241/3-1"
     },
     {
-      "funder_name": "CI241/7-1"
+      "funder_name": "DFG",
+      "award_number": "CI241/7-1"
     },
     {
-      "funder_name": "ERC-StG-2018-803370"
+      "funder_name": "ERC",
+      "award_number": "ERC-StG-2018-803370"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset contains raw EEG recordings from participants performing a tactile discrimination task involving Braille letter stimuli presented to the fingertips. The study investigates the neural mechanisms underlying sensory-to-perceptual transformations of Braille letters in the visually deprived brain, with stimuli consisting of eight Braille letters (B, C, D, L, M, N, V, Z) presented bilaterally under the index fingers. The dataset includes complete BrainVision files with detailed event markers for stimulus onsets, trial types, and behavioral responses.",
+  "methods_description": "EEG data were recorded during a tactile Braille letter discrimination task. Stimuli consisted of eight Braille letters presented on Braille cells under the left and right index fingers. Triggers S1-8 indicate letters presented to the left hand, while S9-16 indicate letters presented to the right hand. Additional event markers include trial onsets (S101), stimulus onsets (S222), catch trials (S200), and pedal press responses (S253/S254). Some participants completed multiple sessions, and EEG recording was restarted within sessions for some participants, resulting in separate runs.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Braille"
+    },
+    {
+      "term": "tactile perception"
+    },
+    {
+      "term": "visual deprivation"
+    },
+    {
+      "term": "sensory processing"
+    },
+    {
+      "term": "letter discrimination"
+    }
+  ],
+  "source_hash": "42e4e81f74e13f25684063ddcac7270403831538382d7096cc8904fe5cad1951"
 }
