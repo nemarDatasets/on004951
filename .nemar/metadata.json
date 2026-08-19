@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Braille letters - EEG",
-  "description": "This dataset contains raw EEG recordings from participants performing a tactile discrimination task involving Braille letter stimulation. Participants received Braille letters (B, C, D, L, M, N, V, Z) presented on Braille cells under their left and right index fingers while EEG was recorded. The dataset accompanies research investigating the neural transformation of sensory tactile input to perceptual representations of Braille letters in the visually deprived brain.",
-  "methods_description": "EEG data were recorded using BrainVision equipment and stored in BrainVision format (.eeg, .vhdr, .vmrk files). Stimuli consisted of Braille letters presented tactilely to the left and right index fingers. Experimental triggers marked letter presentations (S1-8 for left hand, S9-16 for right hand), trial onsets, stimulus onsets, catch trials, and behavioral responses. Some participants completed multiple sessions, and recording was restarted within sessions for some participants, resulting in multiple runs.",
+  "description": "This dataset contains raw EEG recordings from participants performing a Braille letter discrimination task, in which Braille letters were presented to the left and right index fingers via Braille cells. The data were collected to investigate the transformation of sensory to perceptual representations of Braille letters in the visually deprived brain. Recordings were made using BrainVision hardware and are organized following the BIDS-EEG standard. For some participants, EEG recording was stopped and restarted within a session, resulting in separate runs, and some participants completed a second session.",
+  "methods_description": "EEG data were recorded using BrainVision equipment (.eeg, .vhdr, .vmrk files). Stimuli consisted of Braille letters (B, C, D, L, M, N, V, Z) presented on Braille cells under the left and right index fingers of participants. Trigger codes distinguished stimulus laterality (S1-8 for left hand, S9-16 for right hand) as well as trial events such as trial onset, stimulus onset, catch trials, and pedal press responses (correct/incorrect). Some participants completed multiple runs or sessions due to interruptions in recording.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,16 +21,30 @@
       "term": "Braille"
     },
     {
+      "term": "Blindness",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001766"
+    },
+    {
       "term": "tactile perception"
     },
     {
       "term": "sensory processing"
     },
     {
-      "term": "visual deprivation"
+      "term": "perceptual representation"
     },
     {
-      "term": "electroencephalography"
+      "term": "visually deprived"
+    },
+    {
+      "term": "Braille reading"
+    },
+    {
+      "term": "BrainVision"
+    },
+    {
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -40,24 +54,29 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004951",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds004951.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004951",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.82901/nemar.on004951",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
