@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Braille letters - EEG",
-  "description": "This dataset contains raw EEG recordings from participants performing a Braille letter discrimination task, in which Braille letters were presented to the left and right index fingers via Braille cells. The data were collected to investigate the transformation of sensory to perceptual representations of Braille letters in the visually deprived brain. Recordings were made using BrainVision hardware and are organized following the BIDS-EEG standard. For some participants, EEG recording was stopped and restarted within a session, resulting in separate runs, and some participants completed a second session.",
-  "methods_description": "EEG data were recorded using BrainVision equipment (.eeg, .vhdr, .vmrk files). Stimuli consisted of Braille letters (B, C, D, L, M, N, V, Z) presented on Braille cells under the left and right index fingers of participants. Trigger codes distinguished stimulus laterality (S1-8 for left hand, S9-16 for right hand) as well as trial events such as trial onset, stimulus onset, catch trials, and pedal press responses (correct/incorrect). Some participants completed multiple runs or sessions due to interruptions in recording.",
+  "description": "Raw EEG recordings from participants who received tactile Braille letters (B, C, D, L, M, N, V, Z) on Braille cells under the left and right index fingers. The dataset accompanies a study on how sensory representations are transformed into perceptual Braille letter representations in the visually deprived brain. Data are provided in BrainVision format with event files describing trial onsets, stimulus types, catch trials and pedal responses.",
+  "methods_description": "EEG was recorded with BrainVision equipment while Braille letters were presented tactually to the left or right index finger. Triggers coded letter identity and hand, trial and stimulus onsets, catch trials, and pedal presses. Some recordings were split into multiple runs, and some participants completed a second session.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,30 +21,18 @@
       "term": "Braille"
     },
     {
-      "term": "Blindness",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001766"
-    },
-    {
       "term": "tactile perception"
     },
     {
-      "term": "sensory processing"
+      "term": "visual deprivation"
     },
     {
-      "term": "perceptual representation"
+      "term": "letter representation"
     },
     {
-      "term": "visually deprived"
-    },
-    {
-      "term": "Braille reading"
-    },
-    {
-      "term": "BrainVision"
-    },
-    {
-      "term": "BIDS"
+      "term": "Blindness",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001766"
     }
   ],
   "related_identifiers": [
@@ -72,11 +60,6 @@
       "identifier": "https://nemar.org/dataset/on004951",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.82901/nemar.on004951",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -103,7 +86,7 @@
     "eeg"
   ],
   "sizes": [
-    "23.6 GB (70 files)"
+    "22.00 GB (70 files)"
   ],
   "formats": [
     ".eeg",
